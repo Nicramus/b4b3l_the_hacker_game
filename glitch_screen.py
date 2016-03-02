@@ -42,5 +42,5 @@ while not done:
         pygame.time.delay(1)
     fps = clock.get_fps()
     pygame.display.set_caption(str(fps))
-    clock.tick()
+    clock.tick(30)
 
