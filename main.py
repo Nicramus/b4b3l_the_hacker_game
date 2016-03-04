@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 import pygame
-#import li
-#from pygame.locals import *
 
 class Main:
     def __init__(self):
@@ -11,14 +9,12 @@ class Main:
         self.last = pygame.time.get_ticks()
         self.fps = 60.0 #ilosc klatek
         self.clock = pygame.time.Clock()
-        self.step = 0 #krok? chyba idziem tą drogą xD
 
     def on_init(self):
         pygame.init()
         self._display_surf = pygame.display.set_mode(self.size, pygame.HWSURFACE | pygame.DOUBLEBUF)
         self._running = True
         self.screen = pygame.display.get_surface()
-        self.screenrect = self.screen.get_rect()
         self.vga_437_font = pygame.font.Font("resources/fonts/Perfect_DOS_VGA_437_Win.ttf", 20)
 
     def on_event(self, event):
@@ -38,9 +34,6 @@ class Main:
 
         #głowna pętla gry
         while( self._running ):
-
-           #list = pygame.font.get_fonts()
-
            #pętla zdarzen
            for event in pygame.event.get():
                self.on_event(event)
