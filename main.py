@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import pygame
+from pygame_movie_hacker import MovieHacker
 
 class Main:
     def __init__(self):
@@ -32,12 +33,26 @@ class Main:
         if self.on_init() == False:
             self._running = False
 
+        file_path = "main.py"
+        with open(file_path, "r") as file_to_print:
+            try:
+                file_stringed = file_to_print.read()
+            except IOError:
+                print ("File load error")
+
+
+        mv = MovieHacker(self.screen, file_stringed, self.vga_437_font)
+        mv.set_font_delay(50)
+        mv.set_user_control(True)
+
         #głowna pętla gry
-        while( self._running ):
+        while(self._running):
+
            #pętla zdarzen
            for event in pygame.event.get():
                self.on_event(event)
                self.display_fps()
+               mv.animate_text()
         self.on_cleanup()
 
 if __name__ == "__main__":
