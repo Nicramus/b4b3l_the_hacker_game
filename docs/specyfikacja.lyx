@@ -1,0 +1,183 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Gra hakerska - „B4B3L” 
+\end_layout
+
+\begin_layout Enumerate
+ Cele gry- określić!
+\end_layout
+
+\begin_layout Standard
+a) Chodzi po folderach, odpala proste programy… Jakie programy? -loguje
+ się, podaje nazwę użytkownika i hasło -skaner portów -ls, cd (nawigacja
+ i wyświetlanie folderów) (priorytet) Może uprościć sterowanie? Menu kontekstowe
+? -telnet -easter egg, o 13:37 niech się coś śmiesznego stanie :D 
+\end_layout
+
+\begin_layout Standard
+b) łączy się z hostami, kradnie pieniądze Łączy się z hostem przez telnet
+ Losowość- musi szybko klikać/pisać (ma ograniczony czas) jeżeli się połączył.
+ Może powinien „zrobić w czasie jakąś małą mini gierkę”? 
+\end_layout
+
+\begin_layout Standard
+c) Rozwój Rozbudowa sprzętu? Zwiększanie mocy obliczeniowej, żeby kraść
+ więcej? Jakiś sklep do kupowania ulepszeń? Robi się skomplikowanie.
+ To w kolejnym etapie 
+\end_layout
+
+\begin_layout Standard
+d) musi szybko pisać (moduł movie-hacker) -wrogowie -musisz szybko klikac!
+ -twoim wrogiem jest czas
+\end_layout
+
+\begin_layout Standard
+2.
+ Technologia i narzędzia -Pygame -Python 2.7, potem będę portował na 3.4-
+ potraktuję to jako dodatkowe wyzwanie -sceny: prosty silnik, oparty o klasy
+ -system operacyjny: Linux (Windows/Mac OS X/Android → w przyszłości) -Pycharm
+ -Git i Github
+\end_layout
+
+\begin_layout Standard
+3.
+ Szkice i ekrany.
+ Splash screen, na starcie Menu Ustawienia Ekran logowania Ekran „hakowania”
+ Ekran nawigacji HUD?
+\end_layout
+
+\begin_layout Standard
+4.
+ Grafika i dźwięk.
+ Większość rzeczy robiona samodzielnie.
+ 
+\end_layout
+
+\begin_layout Standard
+Technologia a)Pygame, python
+\end_layout
+
+\begin_layout Standard
+Wysyłanie postępu na zdalny serwer
+\end_layout
+
+\begin_layout Standard
+Założenia
+\end_layout
+
+\begin_layout Standard
+I ETAP pygame_movie_hacker Program który "udaje programowanie" tak jak ta
+ stronka http://www.hackertyper.com/ Jest oddzielnym, samodzielnym modułem,
+ może być wykorzystany "sam w sobie" lub być elementem innej gry.
+ Oddzielna dokumentacja (ENG) SKALOWANIE- stała rozdzielczość tak jak w
+ pokemonach.
+ W pokemonach emulator dodawał taką śmieszną ramkę.
+ Ekran podzielić na kratki.
+ Każda literka w oddzielnym tilesie (kratku).
+ Będzie można oddzielnie modyfikować kolor każdej litery oraz gliczować
+ ekran.
+ Będzie to o wiele trudniejsze :-) 
+\end_layout
+
+\begin_layout Standard
+II ETAP Pseudo logowanie Nawigacja po fejkowym systemie plików Easter eggs,
+ pasty itp, możliwości jest multum ASCII ART
+\end_layout
+
+\begin_layout Standard
+Integracja z wykopem? Psucie strony wykopu w przeglądarce? Może jakimś dodatkiem
+?*
+\end_layout
+
+\begin_layout Standard
+To na potem*
+\end_layout
+
+\begin_layout Standard
+Pytania
+\end_layout
+
+\begin_layout Standard
+2.
+ Wyzwanie? Zarabianie punktów? Atencji? Kradzieże plusów? 3.
+ Przeciwnicy, przeciwnik? 4.
+ Warunki zakończenia gry? Zwycięstwo/przegrana? 
+\end_layout
+
+\begin_layout Standard
+Nazywanie procesu (w pythonie) http://stackoverflow.com/questions/564695/is-there
+-a-way-to-change-effective-process-name-in-python
+\end_layout
+
+\begin_layout Standard
+Inspiracje http://codegolf.stackexchange.com/questions/30322/make-it-look-like-im-
+working http://www.hackertyper.com/ https://github.com/arscan/encom-boardroom
+ 
+\end_layout
+
+\begin_layout Standard
+https://zestyr.itch.io/no-hackers-sky
+\end_layout
+
+\end_body
+\end_document
