@@ -92,10 +92,6 @@ class MovieHacker:
                   self.__render_text(string_part)
 
                   for event in pygame.event.get():
-                    if event.type == pygame.QUIT:
-                      print "Exiting program!"
-                      return MovieHacker.EXIT_CODE
-
                     if self.user_control:
                         if pygame.key.get_pressed():
                             self.__update_screen()

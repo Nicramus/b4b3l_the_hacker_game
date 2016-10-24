@@ -6,7 +6,7 @@ class Main:
     def __init__(self):
         print "__init__"
         self._display_surf = None
-        self.size = self.weight, self.height = 640, 400 #wymagane
+        self.size = self.weight, self.height = 800, 600 #wymagane
         self.last = pygame.time.get_ticks()
         self.fps = 60.0 #ilosc klatek
         self.clock = pygame.time.Clock()
@@ -40,7 +40,7 @@ class Main:
             except IOError:
                 print ("File load error")
 
-
+        #self.screen(pygame.display.Info())
         mv = MovieHacker(self.screen, file_stringed, self.vga_437_font)
         mv.set_font_delay(50)
         mv.set_user_control(True)
@@ -53,6 +53,10 @@ class Main:
                self.on_event(event)
                self.display_fps()
                mv.animate_text()
+               if event.type == pygame.QUIT:
+                   print "Exiting program!"
+                   return MovieHacker.EXIT_CODE
+
         self.on_cleanup()
 
 if __name__ == "__main__":
